@@ -58,7 +58,7 @@ gulp.task('sass', function () {
 	return gulp.src(settings.sassDir + '/*.scss')
 		.pipe(sass({
 			includePaths: [settings.sassDir],
-			outputStyle: 'compressed'
+			outputStyle: 'nested'
 		}))
 		.on('error', sass.logError)
 		.pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))

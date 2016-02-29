@@ -1,1 +1,352 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);body{font-family:"Raleway",Arial,sans-serif;color:#555;font-size:100%;line-height:1.5;background-color:#f2f2f2;margin:0}*,*:after,*:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}header h1{font-weight:300;text-align:center;font-size:60px;margin-top:180px}
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@font-face {
+  font-family: 'Proximanova Bold';
+  src: url("../fonts/proximanova-extrabold.eot");
+  src: url("../fonts/proximanova-extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-extrabold.woff2") format("woff2"), url("../fonts/proximanova-extrabold.woff") format("woff"), url("../fonts/proximanova-extrabold.ttf") format("truetype"), url("../fonts/proximanova-extrabold.svg#Proximanova Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url("../fonts/museosanscyrl-300.eot");
+  src: url("../fonts/museosanscyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/museosanscyrl-300.woff2") format("woff2"), url("../fonts/museosanscyrl-300.woff") format("woff"), url("../fonts/museosanscyrl-300.ttf") format("truetype"), url("../fonts/museosanscyrl-300.svg#Museo Sans") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url("../fonts/museosanscyrl-500.eot");
+  src: url("../fonts/museosanscyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/museosanscyrl-500.woff2") format("woff2"), url("../fonts/museosanscyrl-500.woff") format("woff"), url("../fonts/museosanscyrl-500.ttf") format("truetype"), url("../fonts/museosanscyrl-500.svg#Museo Sans") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url("../fonts/museosanscyrl-700.eot");
+  src: url("../fonts/museosanscyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/museosanscyrl-700.woff2") format("woff2"), url("../fonts/museosanscyrl-700.woff") format("woff"), url("../fonts/museosanscyrl-700.ttf") format("truetype"), url("../fonts/museosanscyrl-700.svg#Museo Sans") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*  FONTS
+------------------------*/
+/*  TYPOGRAPHY
+–––––––––––––––––––––––––––*/
+body {
+  font-family: "Museo Sans", Arial, sans-serif;
+  font-weight: 700;
+  color: #555;
+  font-size: 100%;
+  line-height: 1.5;
+  background-color: #ccc;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+
+/* ------ Normalize ----- */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* ------ Styles ------ */
+input[type="file"] {
+  display: none; }
+
+.app {
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  overflow: hidden;
+  max-width: 1000px;
+  min-width: 300px;
+  max-height: 100%;
+  width: 99%;
+  height: 100%;
+  background: #313B44;
+  -webkit-box-shadow: 0px 5px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 17px 0px rgba(0, 0, 0, 0.75);
+  color: #fff; }
+  .app-header, .app-info {
+    display: table;
+    width: 100%;
+    height: 5%;
+    background: #0988ea; }
+    .app-header__logo {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      text-transform: uppercase; }
+      .app-header__logo a {
+        color: #fff; }
+  .app-info {
+    background: #313b44;
+    padding: 0 2%;
+    font-weight: 300;
+    font-size: 24px;
+    color: #d7e2ea; }
+    .app-info span {
+      display: table-cell;
+      vertical-align: middle; }
+  .app-chat {
+    height: 95%; }
+    .app-chat > div {
+      float: left; }
+    .app-chat-nav {
+      height: 100%;
+      width: 10%;
+      background: #22282d; }
+    .app-chat-list {
+      height: 100%;
+      width: 25%;
+      overflow-y: auto; }
+      .app-chat-list::-webkit-scrollbar {
+        display: none; }
+      .app-chat-list__item, .app-chat-history__cont, .app-chat-history .js-view__cont {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        resize: vertical;
+        height: 10%;
+        padding: 0 15px;
+        border-bottom: 1px solid #d2dce4;
+        background: #ebf0f2;
+        cursor: pointer; }
+        .app-chat-list__item:hover, .app-chat-history__cont:hover, .app-chat-history .js-view__cont:hover {
+          opacity: .5; }
+        .app-chat-list__item--active {
+          background: #f9fafb; }
+      .app-chat-list__img {
+        position: relative;
+        float: left;
+        margin-right: 10px;
+        resize: vertical; }
+        .app-chat-list__img img {
+          display: block;
+          width: 45px;
+          height: 45px;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          overflow: hidden; }
+        .app-chat-list__img--online:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          display: block;
+          width: 15px;
+          height: 15px;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          border: 2px solid #fff;
+          background: #3cc35a; }
+      .app-chat-list__title {
+        overflow: hidden; }
+      .app-chat-list__name {
+        color: #5b6a78;
+        font-weight: 700;
+        font-size: 1em;
+        white-space: nowrap; }
+      .app-chat-list__msg {
+        overflow: hidden;
+        color: #92a0ad;
+        font-size: .75em;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+    .app-chat-history {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      width: 65%;
+      background: #77B7E4; }
+      .app-chat-history__panel {
+        position: relative;
+        z-index: 3;
+        height: 15%;
+        padding: 20px 20px;
+        background: #f9fafb;
+        -webkit-box-shadow: 0px 6px 11px -1px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 6px 11px -1px rgba(0, 0, 0, 0.6); }
+      .app-chat-history__area, .app-chat-history .js-msg-area {
+        display: block;
+        width: 75%;
+        height: 100%;
+        margin: 0 auto;
+        font-family: "Museo Sans", Arial, sans-serif;
+        font-weight: 500;
+        border: none;
+        resize: none;
+        -webkit-box-shadow: 0 1px 0 0 #e8e8e8;
+                box-shadow: 0 1px 0 0 #e8e8e8;
+        background: transparent;
+        -webkit-transition: .3s;
+        transition: .3s;
+        outline: none; }
+        .app-chat-history__area:focus, .app-chat-history .js-msg-area:focus {
+          -webkit-box-shadow: 0 2px 0 0 #77b7e4;
+                  box-shadow: 0 2px 0 0 #77b7e4; }
+      .app-chat-history__icon {
+        position: absolute;
+        display: block;
+        width: 25px;
+        height: 25px;
+        cursor: pointer; }
+        .app-chat-history__icon:hover {
+          opacity: .75; }
+        .app-chat-history__icon--right {
+          right: 20px; }
+        .app-chat-history__icon .chat-icon {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          background-size: cover; }
+          .app-chat-history__icon .chat-icon--smile {
+            background-image: url("../img/smile.png"); }
+          .app-chat-history__icon .chat-icon--clip {
+            background-image: url("../img/clip.png"); }
+      .app-chat-history__submit {
+        position: absolute;
+        padding: 5px 10px;
+        bottom: 20px;
+        right: 20px;
+        border: none;
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        outline: none;
+        background: transparent;
+        color: #0CBAF1;
+        font-family: "Museo Sans", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer; }
+        .app-chat-history__submit:hover {
+          background: #EEF3F5; }
+      .app-chat-history__view, .app-chat-history .js-view {
+        height: 85%;
+        padding: 15px 10px;
+        overflow-y: auto; }
+      .app-chat-history__msg, .app-chat-history .js-view__msg {
+        position: relative;
+        z-index: 2;
+        width: 95%;
+        min-height: 15%;
+        padding: 20px 0;
+        margin: 10px auto;
+        cursor: pointer;
+        overflow: hidden;
+        -webkit-border-radius: 1px;
+                border-radius: 1px;
+        background: #f9fafb;
+        color: #5b6a78;
+        -webkit-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.75);
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translateZ(0) scale(1, 1);
+        -webkit-transition: .3s;
+        transition: .3s; }
+        .app-chat-history__msg:hover, .app-chat-history__msg--checked, .app-chat-history .js-view__msg:hover, .app-chat-history .js-view__msg--checked {
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          opacity: .75; }
+      .app-chat-history__img, .app-chat-history .js-view__img {
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        display: block;
+        margin-top: -28px;
+        overflow: hidden; }
+      .app-chat-history__img img, .app-chat-history .js-view__img img {
+        display: block;
+        width: 56px;
+        height: 56px;
+        overflow: hidden;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+      .app-chat-history__time {
+        position: absolute;
+        top: 5px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: .75em;
+        font-weight: 300; }
+      .app-chat-history__cont, .app-chat-history .js-view__cont {
+        position: relative;
+        width: 80%;
+        margin: 0 5% 0 15%;
+        background: transparent;
+        border: none; }
+        .app-chat-history__cont:hover, .app-chat-history .js-view__cont:hover {
+          opacity: 1; }
+      .app-chat-history__name, .app-chat-history .js-view__name {
+        font-family: "Museo Sans", Arial, sans-serif;
+        font-size: .9em;
+        padding: 5px 0;
+        color: #00385F;
+        font-weight: 700; }
+      .app-chat-history__text, .app-chat-history .js-view__text {
+        font-family: "Museo Sans", Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        color: #333;
+        word-wrap: break-word; }
+      .app-chat-history__text--img {
+        text-align: center; }
