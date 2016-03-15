@@ -3,4 +3,5 @@ node_modules
 .sass-cache
 *.thumb
 /gulpfile.js
+/test.txt
 src
