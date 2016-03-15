@@ -1,6 +1,6 @@
 ## App Chat
 
-A very crude version
+Chat on Golang + Gorilla WS
 
 ### To run
 - Availability installing golang and internet access.
