@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "description": "A Jade and Sass starter project using gulp for task automation.",
   "main": "gulpfile.js",
-  "author": {
-    "name": "Joshua Azemoh",
-    "email": "buzzme46@gmail.com",
-    "url": "https://github.com/azemoh"
-  },
   "scripts": {
     "start": "NODE_ENV=development http-server -a lvh.me -p 3500 & gulp",
     "build": "NODE_ENV=production gulp build"
@@ -20,10 +15,6 @@
     "gulp-jade": "^1.0.1",
     "gulp-sass": "^2.0.4",
     "require-dir": "^0.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/azemoh/gulp-jade-sass-starter.git"
   },
   "keywords": [
     "jade",

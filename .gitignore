@@ -2,6 +2,5 @@
 node_modules
 .sass-cache
 *.thumb
-/gulpfile1.js
 /gulpfile.js
 src
