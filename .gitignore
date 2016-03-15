@@ -3,5 +3,4 @@ node_modules
 .sass-cache
 *.thumb
 src
-./.gitignore
-./gulpfile.js
+.git/info/exclude
