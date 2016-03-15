@@ -13,9 +13,10 @@ var gulp = require('gulp'),
 * Change directories here
 */
 var settings = {
-	publicDir: '_site',
-	sassDir: 'assets/css',
-	cssDir: '_site/assets/css'
+	publicDir: 'public',
+	sassDir: 'src/css',
+	cssDir: 'public/css',
+	jadeDir: 'src/html'
 };
 
 /**
@@ -23,10 +24,7 @@ var settings = {
  * matching file name. index.jade - index.jade.json
  */
 gulp.task('jade', function () {
-	return gulp.src('*.jade')
-		.pipe(data(function (file) {
-			return require('./_data/' + path.basename(file.path) + '.json');
-		}))
+	return gulp.src(settings.jadeDir + '/*.jade')
 		.pipe(jade())
 		.pipe(gulp.dest(settings.publicDir));
 });

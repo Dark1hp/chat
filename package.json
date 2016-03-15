@@ -9,8 +9,8 @@
     "url": "https://github.com/azemoh"
   },
   "scripts": {
-    "start": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=development http-server -a lvh.me -p 3500 & gulp",
+    "build": "NODE_ENV=production gulp build"
   },
   "devDependencies": {
     "browser-sync": "^2.9.3",
@@ -18,9 +18,10 @@
     "gulp-autoprefixer": "^3.0.1",
     "gulp-data": "^1.2.0",
     "gulp-jade": "^1.0.1",
-    "gulp-sass": "^2.0.4"
+    "gulp-sass": "^2.0.4",
+    "require-dir": "^0.3.0"
   },
-	"repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/azemoh/gulp-jade-sass-starter.git"
   },
